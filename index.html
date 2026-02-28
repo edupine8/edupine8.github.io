@@ -84,6 +84,22 @@
             gap: 2rem;
             width: 100%;
             max-width: 1000px;
+            justify-content: center;
+        }
+
+        @media (max-height: 800px) and (orientation: landscape) {
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+            }
+
+            header {
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
         }
 
         .card {
@@ -200,7 +216,7 @@
     <main class="grid">
 
         <!-- Snake Game Card -->
-        <a href="https://edupine8.github.io/Snake-game2/" class="card">
+        <a href="https://edupine8.github.io/snake-game2/" class="card">
             <div class="card-img-wrap">
                 <img src="assets/snake_cover.png" alt="Snake Game Cover Art">
                 <div class="play-btn">PLAY NOW</div>
